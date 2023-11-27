@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- BS style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- my style -->
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Data Cloud</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.jpg.png">
+    <style>
+        /* defalt style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        /* /defalt style */
+
+        /* font style */
+        @font-face {
+            font-family: 'Bd';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body * {
+            font-family: Bd;
+            font-size: 24px;
+        }
+
+        /* /font style */
+    </style>
+</head>
+
+<body>
+    <div id="wrap" class="on">
+        <div class="container" id="header">
+            <div class="row">
+                <nav class="fixed-top navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#"><img src="./image/favicon.jpg.png" alt="..."></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#header">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kim">기상</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#lee">건강</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#choi">자료</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <div class="container-fluid" id="spinner">
+            <div class="row">
+                <div class="spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container-fluid">
+            <div class="container">
+                <h1 class="tac head-title" style="color: rgb(0, 75, 95); text-shadow: 4px 4px 4px;">INFORMATION</h1>
+            </div>
+        </div>
+        <div class="container" id="content">
+            <div class="row">
+                <div class="left" id="kim">
+                    <h4>기초체력 데이터</h4>
+                    <img src="./image/코드.png" alt="">
+                    <img src="./image/기초체력.png" alt="">
+                    <img src="./image/Figure_1.png" alt="">
+                </div>
+                <div class="right" id="lee">
+                    <h4>기상 데이터</h4>
+                    <img src="./image/output.png" alt="">
+                    <img src="./image/graph1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <h1 class="tac head-title" style="color: rgb(0, 75, 95); text-shadow: 4px 4px 4px;">DATA</h1>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="choi">
+            <div class="row">
+                <div class="bottom container-fluid">
+                    <div class="left col-lg-6 col-md-6 col-sm-12 col-12">
+                        <h3 class="tac head-title">기상 자료</h3>
+                        <p class="d-flex">
+                        <div class="w-100"></div>
+                        <a class="col-12 col-sm-12 col-md-12 col-lg-12" target="_blank"
+                            href="https://www.weather.go.kr/w/index.do#close">기상청</a>
+                        <div class="w-100"></div>
+                        <a class="col-12 col-sm-12 col-md-12 col-lg-12" target="_blank"
+                            href="https://data.kma.go.kr/climate/RankState/selectRankStatisticsDivisionList.do">기상자료개방포털</a>
+                        <div class="w-100"></div>
+                        <a class="col-12 col-sm-12 col-md-12 col-lg-12" target="_blank"
+                            href="https://kostat.go.kr/unifSearch/search.es">통계청</a>
+                        <div class="w-100"></div>
+                        <a class="col-12 col-sm-12 col-md-12 col-lg-12" target="_blank"
+                            href="https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1YL9901&vw_cd=&list_id=&scrId=&seqNo=&lang_mode=ko&obj_var_id=&itm_id=&conn_path=K1">KOSIS</a>
+                        <div class="w-100"></div>
+                        <a class="col-12 col-sm-12 col-md-12 col-lg-12" target="_blank"
+                            href="https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1401#">e-나라지표</a>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="right col-lg-6 col-md-6 col-sm-12 col-12">
+                        <h3 class="tac head-title">건강 자료</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="back-img"></div>
+        <br>
+        <hr>
+        <br>
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="madeBy col-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                            <h3><a href="#footer">김효원</a></h3>
+                            <p>ppppp</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                            <h3><a href="#footer">이미선</a></h3>
+                            <p>ppppp</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                            <h3><a href="#footer">최정우</a></h3>
+                            <p>ppppp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modals" id="modals">
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
